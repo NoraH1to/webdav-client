@@ -1,5 +1,10 @@
 # WebDAV-Client changelog
 
+## v5.1.0
+_2023-05-25_
+
+ * https://github.com/NoraH1to/yue/issues/2 Add `directoryBasePath` field to the client options.
+
 ## v5.0.0
 _2022-11-30_
 

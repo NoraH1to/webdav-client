@@ -1,5 +1,5 @@
 {
-  "name": "webdav",
+  "name": "@norah1to/webdav",
   "version": "5.0.0",
   "description": "WebDAV client for NodeJS",
   "exports": {
@@ -16,14 +16,14 @@
     "build:node": "tsc",
     "build:web": "webpack --mode production --config webpack.config.cjs",
     "clean": "rimraf dist web",
-    "dev": "nodemon -e ts,js --exec 'npm run build' --ignore 'dist/' --ignore 'web/'",
-    "format": "prettier --write '{source,test}/**/*.{js,ts}'",
+    "dev": "nodemon -e ts,js --exec \"npm run build\" --ignore \"dist/\" --ignore \"web/\"",
+    "format": "prettier --write \"{source,test}/**/*.{js,ts}\"",
     "prepublishOnly": "npm run build",
     "test": "run-s test:node test:web test:format",
-    "test:format": "prettier-check '{source,test}/**/*.{js,ts}'",
+    "test:format": "prettier-check \"{source,test}/**/*.{js,ts}\"",
     "test:node": "nyc mocha \"test/node/**/*.spec.ts\"",
-    "test:node:watch": "nodemon --exec 'npm run test:node' --ignore 'dist/'",
-    "test:web": "concurrently --success 'first' --kill-others 'npm run test:web:karma' 'npm run test:web:server'",
+    "test:node:watch": "nodemon --exec \"npm run test:node\" --ignore \"dist/\"",
+    "test:web": "concurrently --success \"first\" --kill-others \"npm run test:web:karma\" \"npm run test:web:server\"",
     "test:web:karma": "karma start test/karma.conf.cjs",
     "test:web:server": "ts-node-esm ./test/server.web.ts"
   },
@@ -34,7 +34,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/perry-mitchell/webdav-client.git"
+    "url": "git+https://github.com/norah1to/webdav-client.git"
   },
   "keywords": [
     "webdav",
@@ -58,9 +58,9 @@
   "author": "Perry Mitchell <perry@perrymitchell.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/perry-mitchell/webdav-client/issues"
+    "url": "https://github.com/norah1to/webdav-client/issues"
   },
-  "homepage": "https://github.com/perry-mitchell/webdav-client#readme",
+  "homepage": "https://github.com/norah1to/webdav-client#readme",
   "dependencies": {
     "@buttercup/fetch": "^0.1.1",
     "base-64": "^1.0.0",
